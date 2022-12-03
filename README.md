@@ -175,7 +175,21 @@ plt.show()
 <p align="center"><i>Вывод результата (выбрал для показа 4 изображении)</i></p><br><br>
 
 
-<p align="center"><b>Сравнение скорости и количество потребляемой паияти для каждой архитектуры</b><p>
+<p align="center"><b>Сравнение точности, скорости и количество потребляемой памяти каждого метода</b><p><br>
+
+Точность модели определяется следующим образом:
+
+```
+top1_accuracy = top1_accuracy/len(images)
+top5_accuracy = top5_accuracy/len(images)
+print(f"top-1 accuracy: {100 * top1_accuracy:.1f}%")
+print(f"top-5 accuracy: {100 * top5_accuracy:.1f}%")
+```
+Точность трёх методов в результате:
+<figure>
+  <p align="center"><img src="result/accuracy.png"></p>
+</figure>
+<p align="center"><i>Точность трёх методов в процентах</i></p><br><br>
 
 Протестируем среднее время выполнения каждой из методов:
 
